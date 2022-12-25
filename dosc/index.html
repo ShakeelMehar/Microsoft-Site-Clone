@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth font-poppins">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- <link rel="stylesheet" href="build/tailwind.css" /> -->
+    <link rel="icon" href="\img/Icons/code.png" />
+    <title>Microsoft Clone - Tailwind CSS</title>
+</head>
+
+<body class="md:px-6 xl:px-10 2xl:px-20">
+    <!-- Navbar -->
+    <div class="navbar flex items-center justify-between p-4">
+        <div class="flex items-center justify-center md:order-2 md:hidden">
+            <div class="hamburger inline-block cursor-pointer pr-4">
+                <div class="line my-1 h-0.5 w-5 bg-black"></div>
+                <div class="line my-1 h-0.5 w-5 bg-black"></div>
+                <div class="line my-1 h-0.5 w-5 bg-black"></div>
+            </div>
+            <div class="search md:hidden">
+                <img src="\img/Icons/search.png" class="h-4 w-auto" alt="" />
+            </div>
+        </div>
+        <div class="nav flex items-center justify-center md:order-1 lg:space-x-6">
+            <div class="logo ml-7 md:ml-3">
+                <a href="index.html"><img src="\img/Icons/microsoft.png" class="h-7 w-auto" /></a>
+            </div>
+            <div class="features mx-4 hidden md:flex md:space-x-3 lg:space-x-6">
+                <div class="items"><a href="#">Microsoft 360</a></div>
+                <div class="items"><a href="#">Office</a></div>
+                <div class="items"><a href="#">Windows</a></div>
+                <div class="items"><a href="#">Support</a></div>
+            </div>
+        </div>
+
+        <div class="cart flex items-center justify-center space-x-3 md:order-3 md:space-x-6">
+            <a href="#">
+                <div class="dropdown hidden space-x-5 2xl:block">
+                    All Microsoft
+                </div>
+            </a>
+            <a href="#">
+                <div class="hidden space-x-3 md:block xl:flex">
+                    <span class="hidden xl:block">Search</span>
+                    <img src="\img/Icons/search.png" class="h-4 w-auto" alt="" />
+                </div>
+            </a>
+            <a href="#">
+                <div class="cart space-x-3 xl:flex">
+                    <span class="hidden xl:block">Cart</span>
+                    <img src="\img/Icons/cart.png" class="h-5 w-auto" alt="" />
+                </div>
+            </a>
+            <a href="#">
+                <div class="space-x-3 xl:flex xl:items-center xl:justify-center">
+                    <span class="hidden xl:block">Sign in</span>
+                    <div class="border-gray-500 flex h-8 w-8 items-center justify-center rounded-full border">
+                        <img src="\img/Icons/account.png" class="h-5 w-auto" alt="" />
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+    <!-- Hero Section -->
+    <div class="hero relative flex flex-col lg:flex-row">
+        <div class="right">
+            <img src="\img/Hero.jpeg" alt="Hero" class="flex-shrink-0 border-none align-middle" />
+        </div>
+        <div
+            class="left m-4 flex flex-col space-y-4 text-left lg:absolute lg:mx-20 lg:mt-10 lg:w-[500px] lg:justify-center lg:text-white">
+            <h1 class="pt-10 text-2xl font-semibold lg:text-3xl">
+                Designed for life today - and tomorrow
+            </h1>
+            <span class="text-base font-normal lg:text-base">The next-generation of games. Your goals. Friends and
+                family. Windows
+                11 was made to bring you closer to everything you love.</span>
+            <button class="w-52 bg-[#0067b8] p-2 text-lg font-semibold text-white hover:bg-[#015697]">
+                See if your PC is ready
+            </button>
+        </div>
+    </div>
+    <!-- Products Section -->
+    <div class="product sm:flex sm:flex-wrap mt-6 lg:flex lg:justify-between">
+        <!-- Item 1 -->
+        <div class="item1 w-full p-2 sm:w-[50%] xl:w-[25%]">
+            <div class="item-pic">
+                <img class="w-full" src="\img/Merch.jpg" alt="" />
+            </div>
+            <div class="item-text">
+                <h1 class="text py-3 text-[21px] font-semibold">Microsoft 360</h1>
+            </div>
+            <div class="item-desc text-base sm:text-lg">
+                <p>
+                    Apps and features to help you turn ideas into reality, stay safer
+                    and focus on the important things in life.
+                </p>
+            </div>
+            <div class="item-btn space-x-4 py-4 sm:flex">
+                <a href="#" class="inline-flex items-center font-semibold text-[#0067bb]">
+                    <span>For one person</span>
+                    <ion-icon name="chevron-forward"></ion-icon>
+                </a>
+                <a href="#" class="inline-flex items-center font-semibold text-[#0067bb]">
+                    <span>For up to six peoples</span>
+                    <ion-icon name="chevron-forward"></ion-icon>
+                </a>
+            </div>
+        </div>
+        <!-- Item 2 -->
+        <div class="item2 w-full p-2 sm:w-[50%] xl:w-[25%]">
+            <div class="item-pic">
+                <img class="w-full" src="\img/Edge.jpg" alt="" />
+            </div>
+            <div class="item-text">
+                <h1 class="py-3 text-[21px] font-semibold">Microsoft Edge</h1>
+            </div>
+            <div class="item-desc text-base sm:text-lg">
+                <p>
+                    World-class performance with more privacy, more productivity and
+                    more value while you browse.
+                </p>
+            </div>
+            <div class="item-btn py-4">
+                <a href="#" class="inline-flex items-center space-x-1 font-semibold text-[#0067bb]"><span>Download
+                        Now</span>
+                    <ion-icon name="chevron-forward"></ion-icon>
+                </a>
+            </div>
+        </div>
+        <!-- Item 3 -->
+        <div class="item3 w-full p-2 sm:w-[50%] xl:w-[25%]">
+            <div class="item-pic">
+                <img class="w-full" src="\img/Onedrive.png" alt="" />
+            </div>
+            <div class="item-text">
+                <h1 class="py-3 text-[21px] font-semibold">Microsoft OneDrive</h1>
+            </div>
+            <div class="item-desc text-base sm:text-lg">
+                <p>
+                    Save your files and photos to OneDrive and access them from any
+                    device, anywhere.
+                </p>
+            </div>
+            <div class="item-btn py-4">
+                <a href="#" class="inline-flex items-center space-x-1 font-semibold text-[#0067bb]"><span> Learn
+                        More</span>
+                    <ion-icon name="chevron-forward"></ion-icon>
+                </a>
+            </div>
+        </div>
+        <!-- Item 4 -->
+        <div class="item4 w-full p-2 sm:w-[50%] xl:w-[25%]">
+            <div class="item-pic">
+                <img class="w-full" src="\img/Onenote.jpg" alt="" />
+            </div>
+            <div class="item-text">
+                <h1 class="py-3 text-[21px] font-semibold">Microsoft OneNote</h1>
+            </div>
+            <div class="item-desc text-base sm:text-lg">
+                <p>Organize your notes and your life.</p>
+            </div>
+            <div class="item-btn py-4">
+                <a href="#" class="inline-flex items-center space-x-1 font-semibold text-[#0067bb]"><span>Learn
+                        Now</span>
+                    <ion-icon name="chevron-forward"></ion-icon>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- Outlook Section -->
+
+    <div class="w-full h-auto lg:bg-[#E7E7E7] ">
+        <div class="flex flex-col-reverse lg:justify-between lg:flex-row lg:items-center">
+            <div class="space-y-4 m-4 md:w-[92%] md:shadow-lg md:absolute md:h-[220px] md:-mb-40 md:px-8 md:bg-white lg:shadow-none lg:items-center 
+                lg:my-auto lg:bg-transparent ">
+                <h1 class="pt-10 text-2xl font-semibold xl:text-4xl">Outlook for iOS and Android</h1>
+                <p class="text-base font-normal lg:text-lg">Connect. Organize. Get things done.</p>
+                <button class="w-40 bg-[#0067b8] p-2 text-lg font-semibold text-white hover:bg-[#015697]">Download
+                    Now</button>
+            </div>
+            <div class=" flex justify-center lg:float-right lg:justify-end items-center w-full px-8 bg-[#E7E7E7]">
+                <img src="\img/ios-outlook.png" alt="outlook"
+                    class="h-full lg:h-[40%] lg:w-[40%] overflow-hidden w-auto" />
+            </div>
+        </div>
+    </div>
+
+
+    <!-- business Section -->
+    <div class="md:mt-40 lg:mt-6">
+        <div class="h-10 pt-8 px-4 pb-10 ">
+            <h1 class="font-semibold text-4xl">For business</h1>
+        </div>
+        <div class="product sm:flex sm:flex-wrap lg:flex lg:justify-between">
+            <!-- Item 1 -->
+            <div class="item1 w-full sm:w-[49%] p-4 xl:w-[24%]">
+                <div class="item-pic">
+                    <img class="w-full" src="\img/Merch.jpg" alt="" />
+                </div>
+                <div class="item-text">
+                    <h1 class="text py-3 text-[21px] font-semibold">Microsoft 360</h1>
+                </div>
+                <div class="item-desc text-base sm:text-lg">
+                    <p>
+                        Apps and features to help you turn ideas into reality, stay safer
+                        and focus on the important things in life.
+                    </p>
+                </div>
+                <div class="item-btn space-x-4 py-4 sm:flex">
+                    <a href="#" class="inline-flex items-center font-semibold text-[#0067bb]">
+                        <span>For one person</span>
+                        <ion-icon name="chevron-forward"></ion-icon>
+                    </a>
+                    <a href="#" class="inline-flex items-center font-semibold text-[#0067bb]">
+                        <span>For up to six peoples</span>
+                        <ion-icon name="chevron-forward"></ion-icon>
+                    </a>
+                </div>
+            </div>
+            <!-- Item 2 -->
+            <div class="item2 w-full sm:w-[49%] p-4 xl:w-[24%]">
+                <div class="item-pic">
+                    <img class="w-full" src="\img/Edge.jpg" alt="" />
+                </div>
+                <div class="item-text">
+                    <h1 class="py-3 text-[21px] font-semibold">Microsoft Edge</h1>
+                </div>
+                <div class="item-desc text-base sm:text-lg">
+                    <p>
+                        World-class performance with more privacy, more productivity and
+                        more value while you browse.
+                    </p>
+                </div>
+                <div class="item-btn py-4">
+                    <a href="#" class="inline-flex items-center space-x-1 font-semibold text-[#0067bb]"><span>Download
+                            Now</span>
+                        <ion-icon name="chevron-forward"></ion-icon>
+                    </a>
+                </div>
+            </div>
+            <!-- Item 3 -->
+            <div class="item3 w-full sm:w-[49%] p-4 xl:w-[24%]">
+                <div class="item-pic">
+                    <img class="w-full" src="\img/Onedrive.png" alt="" />
+                </div>
+                <div class="item-text">
+                    <h1 class="py-3 text-[21px] font-semibold">Microsoft OneDrive</h1>
+                </div>
+                <div class="item-desc text-base sm:text-lg">
+                    <p>
+                        Save your files and photos to OneDrive and access them from any
+                        device, anywhere.
+                    </p>
+                </div>
+                <div class="item-btn py-4">
+                    <a href="#" class="inline-flex items-center space-x-1 font-semibold text-[#0067bb]"><span> Learn
+                            More</span>
+                        <ion-icon name="chevron-forward"></ion-icon>
+                    </a>
+                </div>
+            </div>
+            <!-- Item 4 -->
+            <div class="item4 w-full sm:w-[49%] p-4 xl:w-[24%]">
+                <div class="item-pic">
+                    <img class="w-full" src="\img/Onenote.jpg" alt="" />
+                </div>
+                <div class="item-text">
+                    <h1 class="py-3 text-[21px] font-semibold">Microsoft OneNote</h1>
+                </div>
+                <div class="item-desc text-base sm:text-lg">
+                    <p>Organize your notes and your life.</p>
+                </div>
+                <div class="item-btn py-4">
+                    <a href="#" class="inline-flex items-center space-x-1 font-semibold text-[#0067bb]"><span>Learn
+                            Now</span>
+                        <ion-icon name="chevron-forward"></ion-icon>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div>
+        <div class="flex space-x-6 items-center px-4 mt-8">
+            <p class="text-base">Follow Microsoft</p>
+            <a href="index.html"><img src="\img/Icons/facebook.png" class="h-5 w-auto" /></a>
+            <a href="index.html"><img src="\img/Icons/twitter.png" class="h-5 w-auto" /></a>
+            <a href="index.html"><img src="\img/Icons/linkedin.png" class="h-5 w-auto" /></a>
+        </div>
+    </div>
+    <div class="flex justify-end sm:mr-3 py-5">
+        <button class="w-full sm:w-auto p-2 px-3 font-semibold flex justify-center gap-2 bg-[#dadada]">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-narrow-up" width="24"
+                height="24" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor" fill="none"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                <line x1="12" y1="5" x2="12" y2="19"></line>
+                <line x1="16" y1="9" x2="12" y2="5"></line>
+                <line x1="8" y1="9" x2="12" y2="5"></line>
+            </svg>Back to top</button>
+    </div>
+    <div id="footer" class="bg-[#E7E7E7] w-full">
+        <div id="footer-inner" class="h-auto md:flex py-6 px-6 my-8">
+            <div class="w-[10rem] lg:w-[16rem]">
+                <p class="text-base lg:text-lg font-semibold ">Microsoft Store</p>
+                <ul class="space-y-2 py-2">
+                    <li><a href="#"
+                            class="text-xs lg:text-sm hover:border-b hover:opacity-100 opacity-80 border-black">Account
+                            Profile</a></li>
+                    <li><a href="#"
+                            class="text-xs lg:text-sm hover:border-b hover:opacity-100 opacity-80 border-black">Download
+                            Center</a></li>
+                    <li><a href="#"
+                            class="text-xs lg:text-sm hover:border-b hover:opacity-100 opacity-80 border-black">Returns</a>
+                    </li>
+                    <li><a href="#"
+                            class="text-xs lg:text-sm hover:border-b hover:opacity-100 opacity-80 border-black">Order
+                            tracking</a></li>
+                </ul>
+            </div>
+            <div class="w-[10rem] lg:w-[16rem]">
+                <p class="text-base lg:text-lg font-semibold ">Education</p>
+                <ul class="space-y-2 py-2">
+                    <li><a href="#"
+                            class="text-xs lg:text-sm hover:border-b hover:opacity-100 opacity-80 border-black">Microsoft
+                            in education</a></li>
+                    <li><a href="#"
+                            class="text-xs lg:text-sm hover:border-b hover:opacity-100 opacity-80 border-black">Devices
+                            for education</a></li>
+                    <li><a href="#"
+                            class="text-xs lg:text-sm hover:border-b hover:opacity-100 opacity-80 border-black">Microsoft
+                            Teams Edu</a></li>
+                    <li><a href="#"
+                            class="text-xs lg:text-sm hover:border-b hover:opacity-100 opacity-80 border-black">Microsoft
+                            365 Edu</a></li>
+                    <li><a href="#"
+                            class="text-xs lg:text-sm hover:border-b hover:opacity-100 opacity-80 border-black">Office
+                            Education</a></li>
+                    <li><a href="#"
+                            class="text-xs lg:text-sm hover:border-b hover:opacity-100 opacity-80 border-black">Educator
+                            training</a></li>
+                    <li><a href="#"
+                            class="text-xs lg:text-sm hover:border-b hover:opacity-100 opacity-80 border-black">Deals
+                            for students</a></li>
+                    <li><a href="#"
+                            class="text-xs lg:text-sm hover:border-b hover:opacity-100 opacity-80 border-black">Azure
+                            for students</a></li>
+                </ul>
+            </div>
+            <div class="w-[10rem] lg:w-[16rem]">
+                <p class="text-base lg:text-lg font-semibold ">Business</p>
+                <ul class="space-y-2 py-2">
+                    <li><a href="#"
+                            class="text-xs lg:text-sm hover:border-b hover:opacity-100 opacity-80 border-black">Microsoft
+                            Cloud</a></li>
+                    <li><a href="#"
+                            class="text-xs lg:text-sm hover:border-b hover:opacity-100 opacity-80 border-black">Microsoft
+                            Security</a></li>
+                    <li><a href="#"
+                            class="text-xs lg:text-sm hover:border-b hover:opacity-100 opacity-80 border-black">Azure</a>
+                    </li>
+                    <li><a href="#"
+                            class="text-xs lg:text-sm hover:border-b hover:opacity-100 opacity-80 border-black">Dynamics
+                            365</a></li>
+                    <li><a href="#"
+                            class="text-xs lg:text-sm hover:border-b hover:opacity-100 opacity-80 border-black">Microsoft
+                            365</a></li>
+                    <li><a href="#"
+                            class="text-xs lg:text-sm hover:border-b hover:opacity-100 opacity-80 border-black">Microsoft
+                            Advertising</a></li>
+                    <li><a href="#"
+                            class="text-xs lg:text-sm hover:border-b hover:opacity-100 opacity-80 border-black">Microsoft
+                            Industry</a></li>
+                    <li><a href="#"
+                            class="text-xs lg:text-sm hover:border-b hover:opacity-100 opacity-80 border-black">Microsoft
+                            Teams</a></li>
+                </ul>
+            </div>
+            <div class="w-[10rem] lg:w-[16rem]">
+                <p class="text-base lg:text-lg font-semibold ">Developer & IT</p>
+                <ul class="space-y-2 py-2">
+                    <li><a href="#"
+                            class="text-xs lg:text-sm hover:border-b hover:opacity-100 opacity-80 border-black">Hello
+                            World</a></li>
+                    <li><a href="#"
+                            class="text-xs lg:text-sm hover:border-b hover:opacity-100 opacity-80 border-black">Hello
+                            World</a></li>
+                    <li><a href="#"
+                            class="text-xs lg:text-sm hover:border-b hover:opacity-100 opacity-80 border-black">Hello
+                            World</a></li>
+                    <li><a href="#"
+                            class="text-xs lg:text-sm hover:border-b hover:opacity-100 opacity-80 border-black">Hello
+                            World</a></li>
+                    <li><a href="#"
+                            class="text-xs lg:text-sm hover:border-b hover:opacity-100 opacity-80 border-black">Hello
+                            World</a></li>
+                    <li><a href="#"
+                            class="text-xs lg:text-sm hover:border-b hover:opacity-100 opacity-80 border-black">Hello
+                            World</a></li>
+                    <li><a href="#"
+                            class="text-xs lg:text-sm hover:border-b hover:opacity-100 opacity-80 border-black">Hello
+                            World</a></li>
+                    <li><a href="#"
+                            class="text-xs lg:text-sm hover:border-b hover:opacity-100 opacity-80 border-black">Hello
+                            World</a></li>
+                </ul>
+            </div>
+            <div class="w-[10rem] lg:w-[16rem]">
+                <p class="text-base lg:text-lg font-semibold ">Company</p>
+                <ul class="space-y-2 py-2">
+                    <li><a href="#"
+                            class="text-xs lg:text-sm hover:border-b hover:opacity-100 opacity-80 border-black">Hello
+                            World</a></li>
+                    <li><a href="#"
+                            class="text-xs lg:text-sm hover:border-b hover:opacity-100 opacity-80 border-black">Hello
+                            World</a></li>
+                    <li><a href="#"
+                            class="text-xs lg:text-sm hover:border-b hover:opacity-100 opacity-80 border-black">Hello
+                            World</a></li>
+                    <li><a href="#"
+                            class="text-xs lg:text-sm hover:border-b hover:opacity-100 opacity-80 border-black">Hello
+                            World</a></li>
+                    <li><a href="#"
+                            class="text-xs lg:text-sm hover:border-b hover:opacity-100 opacity-80 border-black">Hello
+                            World</a></li>
+                    <li><a href="#"
+                            class="text-xs lg:text-sm hover:border-b hover:opacity-100 opacity-80 border-black">Hello
+                            World</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="flex justify-center py-4">
+        <div class="w-[50%]">
+            <a href="#" class="flex">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                    <path fill="none" d="M0 0h24v24H0z" />
+                    <path
+                        d="M6.235 6.453a8 8 0 0 0 8.817 12.944c.115-.75-.137-1.47-.24-1.722-.23-.56-.988-1.517-2.253-2.844-.338-.355-.316-.628-.195-1.437l.013-.091c.082-.554.22-.882 2.085-1.178.948-.15 1.197.228 1.542.753l.116.172c.328.48.571.59.938.756.165.075.37.17.645.325.652.373.652.794.652 1.716v.105c0 .391-.038.735-.098 1.034a8.002 8.002 0 0 0-3.105-12.341c-.553.373-1.312.902-1.577 1.265-.135.185-.327 1.132-.95 1.21-.162.02-.381.006-.613-.009-.622-.04-1.472-.095-1.744.644-.173.468-.203 1.74.356 2.4.09.105.107.3.046.519-.08.287-.241.462-.292.498-.096-.056-.288-.279-.419-.43-.313-.365-.705-.82-1.211-.96-.184-.051-.386-.093-.583-.135-.549-.115-1.17-.246-1.315-.554-.106-.226-.105-.537-.105-.865 0-.417 0-.888-.204-1.345a1.276 1.276 0 0 0-.306-.43zM12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z" />
+                </svg>
+                <span class="text-sm hover:border-b hover:opacity-100 opacity-80 border-black">English (Pakistan)</span>
+            </a>
+        </div>
+        <div class="w-[50%] flex flex-row justify-between">
+            <a href="#" class="text-sm hover:border-b hover:opacity-100 opacity-80 border-black">Contact Microsoft</a>
+            <a href="#" class="text-sm hover:border-b hover:opacity-100 opacity-80 border-black">Privacy</a>
+            <a href="#" class="text-sm hover:border-b hover:opacity-100 opacity-80 border-black">Terms of use</a>
+            <a href="#" class="text-sm hover:border-b hover:opacity-100 opacity-80 border-black">Trademarks</a>
+            <a href="#" class="text-sm hover:border-b hover:opacity-100 opacity-80 border-black">About Our ads</a>
+            <span class="text-sm">© Microsoft 2022</span>
+        </div>
+    </div>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
